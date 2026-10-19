@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GitHub – A kódok otthona</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;background:#0d1117;color:#e6edf3;line-height:1.7}
+header{padding:20px 8%;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #30363d}
+.logo{font-size:24px;font-weight:bold;color:#7ee787}
+nav a{color:#c9d1d9;text-decoration:none;margin-left:20px}
+nav a:hover{color:#7ee787}
+.hero{padding:65px 8%;display:flex;align-items:center;gap:40px;flex-wrap:wrap;background:radial-gradient(ellipse at top right,#183c2a,#0d1117 65%)}
+.hero-text{flex:1;min-width:270px}
+.hero h1{font-size:clamp(38px,6vw,62px);line-height:1.12;margin-bottom:22px}
+.hero h1 span{color:#7ee787}
+.hero p{color:#b1bac4;font-size:18px}
+.hero img{width:min(100%,420px);border-radius:22px;border:1px solid #30363d}
+.btn{display:inline-block;margin-top:25px;padding:12px 20px;border-radius:9px;background:#238636;color:white;text-decoration:none;font-weight:bold}
+section{padding:65px 8%}
+h2{font-size:32px;margin-bottom:12px}
+.intro{color:#aab4bf;margin-bottom:30px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.card{background:#161b22;border:1px solid #30363d;border-radius:15px;padding:24px}
+.card .icon{font-size:36px}
+.card h3{margin:10px 0;color:#7ee787}
+.card p{color:#b1bac4}
+.workflow{background:#111820}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:16px}
+.step{padding:20px;border-radius:12px;background:#161b22;border:1px solid #30363d}
+.step b{display:block;color:#d2a8ff;font-size:20px;margin-bottom:8px}
+.picture{display:flex;align-items:center;gap:30px;flex-wrap:wrap}
+.picture img{width:min(100%,390px);border-radius:16px}
+.picture div{flex:1;min-width:240px}
+li{margin:8px 0 8px 22px;color:#c9d1d9}
+footer{text-align:center;padding:28px;border-top:1px solid #30363d;color:#8b949e}
+@media(max-width:600px){header{align-items:flex-start;gap:12px;flex-direction:column}nav a{margin:0 12px 0 0}.hero{padding-top:45px}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">⌘ GitHub</div>
+  <nav>
+    <a href="#lenyege">Lényege</a>
+    <a href="#mukodes">Működése</a>
+    <a href="#pages">Weboldalak</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-text">
+    <h1>A kódok otthona: <span>GitHub</span></h1>
+    <p>A GitHub egy online platform, ahol elmentheted a programkódodat, követheted a változásokat, együtt dolgozhatsz másokkal, és akár a saját weboldaladat is közzéteheted.</p>
+    <a class="btn" href="#lenyege">Ismerd meg! ↓</a>
+  </div>
+  <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=85" alt="Laptop programozás közben egy íróasztalon">
+</section>
+
+<section id="lenyege">
+  <h2>💡 Mi a GitHub lényege?</h2>
+  <p class="intro">Képzeld el úgy, mint egy online műhelyt a programozóknak.</p>
+  <div class="cards">
+    <article class="card">
+      <div class="icon">📦</div>
+      <h3>Projekt tárolása</h3>
+      <p>A fájljaidat egy repositoryban, azaz projektadattárban tarthatod.</p>
+    </article>
+    <article class="card">
+      <div class="icon">🕒</div>
+      <h3>Változások követése</h3>
+      <p>Láthatod, mit módosítottál, és szükség esetén visszanézheted a korábbi verziókat.</p>
+    </article>
+    <article class="card">
+      <div class="icon">🤝</div>
+      <h3>Közös fejlesztés</h3>
+      <p>Többen is dolgozhattok ugyanazon a projekten, és ellenőrizhetitek egymás módosításait.</p>
+    </article>
+    <article class="card">
+      <div class="icon">🌐</div>
+      <h3>Weboldalak publikálása</h3>
+      <p>A GitHub Pages segítségével statikus weboldalakat tehetsz közzé az interneten.</p>
+    </article>
+  </div>
+</section>
+
+<section class="workflow" id="mukodes">
+  <h2>⚙️ Hogyan működik?</h2>
+  <p class="intro">A projekted útja a saját gépedtől az online adattárig.</p>
+  <div class="steps">
+    <div class="step"><b>01 · Készítés</b><p>Megírod a kódot, például egy index.html fájlban.</p></div>
+    <div class="step"><b>02 · Commit</b><p>Rögzíted a változtatásokat egy rövid leírással.</p></div>
+    <div class="step"><b>03 · Push</b><p>Feltöltöd a helyi változtatásokat a GitHubra.</p></div>
+    <div class="step"><b>04 · Megosztás</b><p>Mások megnézhetik a projektedet, vagy együtt dolgozhattok rajta.</p></div>
+  </div>
+</section>
+
+<section id="pages">
+  <div class="picture">
+    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=850&q=85" alt="Fejlesztők együtt dolgoznak egy számítógépes projekten" loading="lazy">
+    <div>
+      <h2>🚀 Saját weboldal GitHub Pages segítségével</h2>
+      <p class="intro">Nem kell feltétlenül fizetős tárhely! Egy egyszerű HTML-, CSS- és JavaScript-oldalt közzétehetsz a GitHub Pages használatával.</p>
+      <ul>
+        <li>Hozz létre egy GitHub-fiókot.</li>
+        <li>Készíts egy új repositoryt.</li>
+        <li>Töltsd fel az index.html fájlt.</li>
+        <li>A Settings → Pages menüben kapcsold be a publikálást.</li>
+      </ul>
+      <a class="btn" href="https://docs.github.com/en/pages" target="_blank" rel="noopener noreferrer">Hivatalos útmutató ↗</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <p>GitHub – Ötlettől a működő projektig. 💚</p>
+</footer>
+</body>
+</html>
